@@ -1,1 +1,2 @@
-theme: jekyll-theme-cayman
+title: Chainer Facial Hourglass Re-implementation
+remote_theme: hydecorp/hydejack
