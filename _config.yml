@@ -1,2 +1,9 @@
 title: Chainer Facial Hourglass Re-implementation
 remote_theme: hydecorp/hydejack
+accent_image: /assets/img/sidebar-bg.jpg
+accent_color: rgb(67,83,106)
+
+# file: _config.yml
+author:
+  social:
+    github:  https://github.com/AtomScott/chainer-facial-hourglass # now github appears first
