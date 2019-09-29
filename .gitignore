@@ -1,0 +1,5 @@
+# images and points in dataset
+./dataset/*.pts
+./dataset/*.png
+
+./datasets
