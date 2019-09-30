@@ -8,7 +8,7 @@ sys.path.append('..')
 from datasets.dataset import KeypointDataset
 from arguments import parse_args
 from model import HourGlassNet
-from updater import KeypointUpdater
+from updater import CustomUpdater
 
 
 def main(args):
@@ -48,7 +48,7 @@ def main(args):
     optimizer.setup(model)
 
     # Updater
-    updater= training.updaters.StandardUpdater(train_iter, optimizer, device=args.gpu_id)
+    updater= CustomUpdater(train_iter, optimizer, device=args.gpu_id)
 
     # Setup a Trainer
     trainer = training.Trainer(updater, (args.max_epoch, 'epoch'), out=args.out)
